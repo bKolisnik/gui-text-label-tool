@@ -55,7 +55,7 @@ class JSON_Data:
         else:
             #If not, make a new paragraph
             temp_data = {"qas":[],"context":paragraph}
-            q_json = {"question":question,"id":id,"answers":answers,"is_impossible":is_impossible}
+            q_json = {"question":question,"id":id,"answers":a,"is_impossible":is_impossible}
             temp_data["qas"].append(q_json)
             self.data['data'][0]["paragraphs"].append(temp_data)    
 
